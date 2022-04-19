@@ -1,0 +1,14 @@
+.page-footer {
+  min-height: 108px;
+  background-color: $color-black-russian;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

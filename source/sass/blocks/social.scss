@@ -1,0 +1,32 @@
+.social__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: $color-default-white;
+}
+
+.social__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item--vk svg {
+  width: 24px;
+  height: 13px;
+}
+
+.social__item--instagram svg {
+  width: 24px;
+  height: 24px;
+}
+
+.social__item--facebook svg {
+  width: 12px;
+  height: 24px;
+}

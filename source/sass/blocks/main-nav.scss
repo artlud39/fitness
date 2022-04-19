@@ -1,0 +1,19 @@
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.main-nav__list a {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-default-white, 0.8);
+  }
+}
