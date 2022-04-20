@@ -1,0 +1,149 @@
+.gym {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+}
+
+.gym__wrapper {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  padding-left: 90px;
+
+  @include vp-1199 {
+    max-width: 768px;
+    flex-direction: column;
+    padding-left: 45px;
+    gap: 50px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+  }
+
+}
+
+.gym__inner {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    align-items: center;
+    max-width: 505px;
+  }
+
+  @include vp-767 {
+    align-items: flex-start;
+    padding: 0 15px;
+    padding-bottom: 30px;
+  }
+}
+
+.gym__inner h2 {
+  font-family: $ff-bebas-neue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 42px;
+    padding-bottom: 10px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.gym__inner b {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-sapphire;
+  padding-bottom: 55px;
+
+  @include vp-1199 {
+    padding-bottom: 50px;
+  }
+}
+
+.gym__inner p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-sapphire;
+
+  &:not(:last-child) {
+    padding-bottom: 15px;
+  }
+
+  @include vp-1199 {
+    text-align: center;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    text-align: start;
+    padding-bottom: 10px;
+  }
+}
+
+.gym__img-wrapper {
+  min-width: fit-content;
+
+  @include vp-767 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+.gym__img-wrapper img {
+  width: 660px;
+  height: 401px;
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 678px;
+    height: 345px;
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    width: 100%;
+    height: 313px;
+  }
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include vp-1199 {
+    bottom: 100px;
+    left: 50%;
+  }
+
+  @include vp-767 {
+    position: static;
+    transform: translateX(0);
+  }
+}
+

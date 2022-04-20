@@ -644,7 +644,7 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .page-header {
@@ -693,6 +693,12 @@ button,
 .page-header__tel-wrapper a:hover,
 .page-header__tel-wrapper a:focus {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .logo img {
@@ -853,6 +859,152 @@ button,
 .intro__social-item a:hover,
 .intro__social-item a:focus {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.gym {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 235px;
+}
+
+.gym__wrapper {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 85px;
+  padding-left: 90px;
+}
+
+.gym__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.gym__inner h2 {
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0;
+}
+
+.gym__inner b {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #102654;
+  padding-bottom: 55px;
+}
+
+.gym__inner p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102654;
+}
+
+.gym__inner p:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.gym__img-wrapper {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.gym__img-wrapper img {
+  width: 660px;
+  height: 401px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.video {
+  position: relative;
+  width: 364px;
+  height: 228px;
+  background-color: #000000;
+}
+
+.video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(20, 54, 122, 0.5);
+  z-index: 1;
+}
+
+.video__media {
+  width: 364px;
+  height: 228px;
+  border: none;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video__button svg {
+  width: 100px;
+  height: 100px;
+}
+
+.video__button:focus {
+  outline: none;
+}
+
+/* Enabled */
+
+.video--enabled {
+  cursor: pointer;
+}
+
+.video--enabled .video__button {
+  display: block;
 }
 
 .page-footer {
@@ -1103,7 +1255,7 @@ button,
 
 @media (max-width: 1439px) {
   .container {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -1161,6 +1313,79 @@ button,
   .intro__social-wrapper {
     display: none;
   }
+
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+
+  .gym__wrapper {
+    max-width: 768px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 45px;
+    gap: 50px;
+  }
+
+  .gym__inner {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 505px;
+  }
+
+  .gym__inner h2 {
+    font-size: 42px;
+    line-height: 42px;
+    padding-bottom: 10px;
+  }
+
+  .gym__inner b {
+    padding-bottom: 50px;
+  }
+
+  .gym__inner p {
+    text-align: center;
+  }
+
+  .gym__inner p:last-child {
+    display: none;
+  }
+
+  .gym__img-wrapper img {
+    width: 678px;
+    height: 345px;
+  }
+
+  .gym__video-wrapper {
+    bottom: 100px;
+    left: 50%;
+  }
+
+  .video {
+    width: 266px;
+    height: 167px;
+  }
+
+  .video__media {
+    width: 266px;
+    height: 167px;
+  }
+
+  .video__button svg {
+    width: 73px;
+    height: 73px;
+  }
+
+  .page-footer {
+    min-height: 114px;
+  }
+
+  .main-nav__list {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1170,6 +1395,11 @@ button,
 
   .page-header {
     min-height: 35px;
+  }
+
+  .page-header__tel-wrapper a {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .logo img {
@@ -1222,6 +1452,101 @@ button,
 
   .intro__photo-wrapper {
     display: none;
+  }
+
+  .gym__wrapper {
+    padding: 0;
+    gap: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .gym__inner {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0 15px;
+    padding-bottom: 30px;
+  }
+
+  .gym__inner h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .gym__inner p {
+    text-align: start;
+    padding-bottom: 10px;
+  }
+
+  .gym__img-wrapper {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .gym__img-wrapper img {
+    min-width: 320px;
+    width: 100%;
+    height: 313px;
+  }
+
+  .gym__video-wrapper {
+    position: static;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .video {
+    width: 320px;
+    height: 167px;
+  }
+
+  .video__media {
+    width: 320px;
+    height: 167px;
+  }
+
+  .page-footer {
+    min-height: 260px;
+  }
+
+  .page-footer__wrapper {
+    display: -ms-grid;
+    display: grid;
+  }
+
+  .main-nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-nav__list a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .main-nav__item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  .social__item--vk svg {
+    width: 32px;
+    height: 17px;
+  }
+
+  .social__item--instagram svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .social__item--facebook svg {
+    width: 14px;
+    height: 27px;
   }
 
   .modal__wrapper {

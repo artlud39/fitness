@@ -19,14 +19,29 @@
 .social__item--vk svg {
   width: 24px;
   height: 13px;
+
+  @include vp-767 {
+    width: 32px;
+    height: 17px;
+  }
 }
 
 .social__item--instagram svg {
   width: 24px;
   height: 24px;
+
+  @include vp-767 {
+    width: 27px;
+    height: 27px;
+  }
 }
 
 .social__item--facebook svg {
   width: 12px;
   height: 24px;
+
+  @include vp-767 {
+    width: 14px;
+    height: 27px;
+  }
 }
