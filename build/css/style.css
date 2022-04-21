@@ -1007,6 +1007,279 @@ button,
   display: block;
 }
 
+.gym-membership {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f8f9fc;
+}
+
+.gym-membership__wrapper {
+  position: relative;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gym-membership__wrapper h2 {
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #14367a;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.gym-membership__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.gym-membership__tabs-nav-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 46px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.gym-membership__tabs-nav-list::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
+}
+
+.gym-membership__tabs-nav-button {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(16, 38, 84, 0.5);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 57px;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+}
+
+.gym-membership__tabs-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.gym-membership__tabs-panel-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.gym-membership__tabs-panel-item {
+  position: relative;
+  width: 360px;
+  min-height: 448px;
+  padding-top: 68px;
+  padding-right: 77px;
+  padding-bottom: 68px;
+  padding-left: 77px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 7px solid transparent;
+}
+
+.gym-membership__tabs-panel-item::before {
+  content: "5000";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 203px;
+  height: 69px;
+  font-weight: 700;
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: rgba(232, 232, 232, 0.48);
+  z-index: 3;
+}
+
+.gym-membership__tabs-panel-item:hover {
+  -o-border-image: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-slice: 1;
+}
+
+.gym-membership__tabs-panel-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 4;
+}
+
+.gym-membership__tabs-panel-item-wrapper-title {
+  padding-bottom: 80px;
+}
+
+.gym-membership__tabs-panel-item-wrapper-title h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.gym-membership__tabs-panel-item p {
+  margin: 0;
+}
+
+.gym-membership__tabs-panel-item-wrapper-title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495a7d;
+  text-align: center;
+}
+
+.gym-membership__tabs-panel-item-wrapper-price {
+  padding-bottom: 50px;
+}
+
+.gym-membership__tabs-panel-item-wrapper-price p {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: #103aae;
+}
+
+.gym-membership__tabs-panel-item-wrapper-price span {
+  color: #102654;
+}
+
+.gym-membership__tabs-panel-item-wrapper a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #102654;
+  width: 206px;
+  min-height: 64px;
+  padding: 0;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid #102654;
+}
+
+.gym-membership__tabs-panel-item a:hover,
+.gym-membership__tabs-panel-item a:focus {
+  border: none;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
+}
+
+.gym-membership__tabs-nav-button--active {
+  border-bottom: 2px solid #d10a42;
+  color: #102654;
+}
+
+.gym-membership__tabs-panel {
+  display: none;
+}
+
+.gym-membership__tabs-panel--active {
+  display: block;
+}
+
 .page-footer {
   min-height: 108px;
   background-color: #030a1a;
@@ -1379,6 +1652,40 @@ button,
     height: 73px;
   }
 
+  .gym-membership {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gym-membership__wrapper {
+    max-width: 768px;
+  }
+
+  .gym-membership__wrapper h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .gym-membership__tabs-nav-list {
+    gap: 56px;
+  }
+
+  .gym-membership__tabs-nav-button {
+    font-size: 18px;
+  }
+
+  .gym-membership__tabs-panel-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gym-membership__tabs-panel-item {
+    width: 442px;
+    min-height: 448px;
+  }
+
   .page-footer {
     min-height: 114px;
   }
@@ -1506,6 +1813,41 @@ button,
   .video__media {
     width: 320px;
     height: 167px;
+  }
+
+  .gym-membership__wrapper h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .gym-membership__tabs-nav-list {
+    gap: 0;
+  }
+
+  .gym-membership__tabs-nav-item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .gym-membership__tabs-nav-button {
+    font-size: 16px;
+  }
+
+  .gym-membership__tabs-panel-list {
+    gap: 0;
+  }
+
+  .gym-membership__tabs-panel-item {
+    padding-top: 55px;
+    padding-right: 42px;
+    padding-bottom: 55px;
+    padding-left: 42px;
+    width: 100%;
+    max-width: 442px;
+    min-height: 384px;
+  }
+
+  .gym-membership__tabs-panel-item:not(:last-child) {
+    margin-bottom: 35px;
   }
 
   .page-footer {
