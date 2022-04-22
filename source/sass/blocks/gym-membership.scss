@@ -277,6 +277,12 @@
   color: $color-default-white;
 }
 
+.gym-membership__tabs-panel-item a:focus {
+  border: none;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: $color-default-white;
+}
+
 .gym-membership__tabs-nav-button--active {
   border-bottom: 2px solid #d10a42;
   color: $color-sapphire
