@@ -1493,6 +1493,141 @@ button,
   object-fit: cover;
 }
 
+.trainers {
+  padding-bottom: 120px;
+}
+
+.trainers__wrapper {
+  max-width: 1200px;
+}
+
+.trainers__wrapper h2 {
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.trainers__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.trainers__item {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  background-color: #102654;
+  padding: 58px 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.trainers__item--one {
+  background-image: url("../../img/trainer/trainer-photo-1-desktop.jpg");
+}
+
+.trainers__item--two {
+  background-image: url("../../img/trainer/trainer-photo-2-desktop.jpg");
+}
+
+.trainers__item--three {
+  background-image: url("../../img/trainer/trainer-photo-3-desktop.jpg");
+}
+
+.trainers__item--four {
+  background-image: url("../../img/trainer/trainer-photo-4-desktop.jpg");
+}
+
+.trainers__item-name p,
+.trainers__item-info-name p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.trainers__item-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.trainers__item:hover .trainers__item-info {
+  display: block;
+}
+
+.trainers__item:hover .trainers__item-name {
+  display: none;
+}
+
+.trainers__item-sports p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+}
+
+.trainers__item-info-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: start;
+}
+
+.trainers__item-info-item {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  padding-left: 16px;
+}
+
+.trainers__item-info-item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 .page-footer {
   min-height: 108px;
   background-color: #030a1a;
@@ -1741,7 +1876,7 @@ button,
 
 @media (max-width: 1439px) {
   .container {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
