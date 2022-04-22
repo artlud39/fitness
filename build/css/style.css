@@ -1097,6 +1097,11 @@ button,
   -ms-user-select: none;
   user-select: none;
   border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.gym-membership__tabs-content {
+  width: 100%;
 }
 
 .gym-membership__tabs-panel {
@@ -1259,8 +1264,7 @@ button,
   border: 2px solid #102654;
 }
 
-.gym-membership__tabs-panel-item a:hover,
-.gym-membership__tabs-panel-item a:focus {
+.gym-membership__tabs-panel-item:hover a {
   border: none;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -1679,6 +1683,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .gym-membership__tabs-panel-item {
@@ -1815,17 +1822,28 @@ button,
     height: 167px;
   }
 
+  .gym-membership {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   .gym-membership__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
   }
 
-  .gym-membership__tabs-nav-list {
+  .gym-membership__tabs {
     gap: 0;
+    width: 100%;
   }
 
-  .gym-membership__tabs-nav-item:not(:last-child) {
-    margin-right: 45px;
+  .gym-membership__tabs-nav-list {
+    gap: 0;
+    margin-bottom: 35px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .gym-membership__tabs-nav-button {
@@ -1842,7 +1860,6 @@ button,
     padding-bottom: 55px;
     padding-left: 42px;
     width: 100%;
-    max-width: 442px;
     min-height: 384px;
   }
 
