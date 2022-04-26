@@ -532,6 +532,93 @@
       <section class="action">
         <div class="action__wrapper container">
           <h2>Акции</h2>
+          <ul class="action__list">
+            <li class="action__item action__item--special">
+              <div class="action__item-wrapper">
+                <div class="action__item-info-wrapper">
+                  <div class="action__item-info">
+                    <h3>Год</h3>
+                    <b>4999</b>
+                    <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                  </div>
+                  <div class="action__item-button-wrapper">
+                    <a href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="action__item-img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/action/action-mobile.webp 1x, img/action/action-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/action/action-tablet.webp 1x, img/action/action-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/action/action-desktop.webp 1x, img/action/action-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 767px)"
+                      srcset="img/action/action-mobile.jpg 1x, img/action/action-mobile@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1199px)"
+                      srcset="img/action/action-tablet.jpg 1x, img/action/action-tablet@2x.jpg 2x">
+                    <!-- 1х: width = 280px height = 462px; 2x: width = 560px height = 924px -->
+                    <img src="img/action/action-desktop.jpg" srcset="img/action/action-desktop@2x.jpg 2x" width="280"
+                      height="462" alt="Девушка в спортивной одежде на фоне неба">
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="action__item">
+              <div class="action__item-wrapper">
+                <div class="action__item-info-wrapper">
+                  <div class="action__item-info">
+                    <h3>Месяц бесплатно</h3>
+                    <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                  </div>
+                  <div class="action__item-button-wrapper">
+                    <a href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="action__item">
+              <div class="action__item-wrapper">
+                <div class="action__item-info-wrapper">
+                  <div class="action__item-info">
+                    <h3>Скидка 20%</h3>
+                    <p>Корпоративный фитнес с&nbsp;командой</p>
+                  </div>
+                  <div class="action__item-button-wrapper">
+                    <a href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="feedback__wrapper container">
+          <h2>Отзывы</h2>
+          <div class="feedback__swiper">
+            <div class="feedback__swiper-wrapper">
+              <div class="feedback__swiper-slide">
+                <div class="feedback__info">
+                  <div class="feedback__info-avatar-wrapper">
+                    <!-- 1х: width = 80px height = 80px; 2x: width = 160px height = 160px -->
+                    <img src="img/feedback/feedback-photo-user-1-desktop.jpg" width="80" height="80"
+                      alt="Аватар пользователя">
+                  </div>
+                  <div class="feedback__info-name-wrapper">
+                    <p>Анна Орлова</p>
+                  </div>
+                  <div class="feedback__info-text-wrapper">
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
+                      персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__swiper-button-prev"></div>
+            <div class="feedback__swiper-button-next"></div>
+          </div>
         </div>
       </section>
     </main>
