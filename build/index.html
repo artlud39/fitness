@@ -33,7 +33,12 @@
         <h2 class="visually-hidden"> О нас</h2>
         <div class="intro__wrapper container">
           <div class="intro__intro-logo">
-            <img src="img/svg/intro-logo.svg" width="377" height="253" alt="фитнес центр омск">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/intro-logo-mobile.svg">
+              <source media="(max-width: 1199px)" srcset="img/svg/intro-logo-tablet.svg">
+              <!-- 1х: width = 377px height = 253px; -->
+              <img src="img/svg/intro-logo.svg" width="377" height="253" alt="фитнес центр омск">
+            </picture>
           </div>
           <button class="intro__button">Купить абонемент</button>
           <div class="intro__photo-wrapper">

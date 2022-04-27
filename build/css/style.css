@@ -2920,7 +2920,7 @@ button,
 
   .page-header__tel-wrapper a {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 17px;
     letter-spacing: 0.02em;
   }
 
@@ -2939,6 +2939,10 @@ button,
   .intro__wrapper {
     max-width: 768px;
     gap: 60px 30px;
+  }
+
+  .intro__intro-logo {
+    margin-bottom: 0;
   }
 
   .intro__intro-logo img {
@@ -3362,7 +3366,7 @@ button,
 
   .page-header__tel-wrapper a {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 14px;
   }
 
   .logo img {
