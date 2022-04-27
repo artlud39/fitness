@@ -968,6 +968,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 1200px;
+  padding-left: 26px;
 }
 
 .page-header__tel-wrapper {
@@ -981,8 +982,8 @@ button,
 .page-header__tel-wrapper a {
   font-family: "Bebas Neue", "Open Sans", sans-serif;
   font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
+  line-height: 20px;
+  letter-spacing: 0.04em;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1022,8 +1023,9 @@ button,
   grid-template-columns: max-content;
   -ms-grid-rows: 1fr auto;
   grid-template-rows: 1fr auto;
-  gap: 50px 64px;
+  gap: 43px 64px;
   max-width: 1200px;
+  padding-left: 46px;
 }
 
 .intro__intro-logo {
@@ -1040,6 +1042,7 @@ button,
   justify-self: end;
   -ms-grid-row-align: end;
   align-self: end;
+  margin-bottom: 13px;
 }
 
 .intro__intro-logo img {
@@ -1128,7 +1131,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 24px;
+  gap: 17px;
 }
 
 .intro__social-item {
@@ -2891,6 +2894,14 @@ button,
 @media (max-width: 1439px) {
   .container {
     padding: 0 10px;
+  }
+
+  .page-header__wrapper {
+    padding-left: 26px;
+  }
+
+  .intro__wrapper {
+    padding-left: 46px;
   }
 }
 

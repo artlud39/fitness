@@ -18,6 +18,11 @@
   align-items: flex-end;
   justify-content: space-between;
   max-width: 1200px;
+  padding-left: 26px;
+
+  @include vp-1439 {
+    padding-left: 26px;
+  }
 
   @include vp-1199 {
     max-width: 768px;
@@ -32,8 +37,8 @@
 .page-header__tel-wrapper a {
   font-family: $ff-bebas-neue;
   font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
+  line-height: 20px;
+  letter-spacing: 0.04em;
   color: $color-default-white;
   display: inline-flex;
 

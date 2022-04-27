@@ -24,8 +24,13 @@
   display: grid;
   grid-template-columns: max-content;
   grid-template-rows: 1fr auto;
-  gap: 50px 64px;
+  gap: 43px 64px;
   max-width: 1200px;
+  padding-left: 46px;
+
+  @include vp-1439 {
+    padding-left: 46px;
+  }
 
   @include vp-1199 {
     max-width: 768px;
@@ -47,6 +52,7 @@
   grid-column: 1 / 2;
   justify-self: end;
   align-self: end;
+  margin-bottom: 13px;
 
   @include vp-767 {
     margin-bottom: 60px;
@@ -149,7 +155,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 17px;
 }
 
 .intro__social-item {
