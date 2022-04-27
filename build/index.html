@@ -621,6 +621,54 @@
           </div>
         </div>
       </section>
+
+      <section class="connection">
+        <div class="connection__wrapper">
+          <div class="connection__registration registration">
+            <div class="registration__wrapper">
+              <h2>Бесплатное занятие</h2>
+              <form class="registration__form form" action="#" method="post">
+                <fieldset class="form__personal-info-wrapper">
+                  <div class="form__name-wrapper">
+                    <label>
+                      <input type="text" name="user-name" placeholder="Имя">
+                    </label>
+                  </div>
+                  <div class="form__tel-wrapper">
+                    <label>
+                      <input type="tel" name="tel" placeholder="Телефон">
+                    </label>
+                  </div>
+                </fieldset>
+                <button class="form__button" type="button">Отправить</button>
+              </form>
+            </div>
+          </div>
+          <div class="connection__contacts contacts">
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contacts__item">
+                  <h3>Телефон:</h3>
+                  <p><a href="tel:88005555555">8-800-555-55-55</a></p>
+                </li>
+                <li class="contacts__item">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contacts__item">
+                  <h3>Email:</h3>
+                  <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
@@ -666,36 +714,6 @@
       </div>
     </footer>
   </div>
-
-  <!-- Модалки -->
-  <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
