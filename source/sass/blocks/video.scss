@@ -2,7 +2,7 @@
   position: relative;
   width: 364px;
   height: 228px;
-  background-color: #000000;
+  background-color: $color-default-black;
 
   @include vp-1199 {
     width: 266px;
@@ -75,16 +75,8 @@
 }
 
 .video__button:focus {
-  outline: none;
+  outline-color: $color-torch-red;
 }
-
-// .video:hover .video__button-shape,
-// .video__button:focus .video__button-shape {
-//   fill: #ff0000;
-//   fill-opacity: 1;
-// }
-
-/* Enabled */
 
 .video--enabled {
   cursor: pointer;

@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-// import {findVideos} from './modules/video';
+import {findVideos} from './modules/video';
 import {setupTabs} from './modules/gym-membership';
 import './modules/trainers';
 import './modules/feedback';
@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     setupTabs();
+    findVideos();
 
   });
 });

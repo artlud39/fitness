@@ -1,5 +1,4 @@
 .gym {
-  position: relative;
   padding-top: 120px;
   padding-bottom: 235px;
 
@@ -15,17 +14,17 @@
 }
 
 .gym__wrapper {
+  position: relative;
   max-width: 1200px;
   display: flex;
   align-items: center;
   gap: 85px;
-  padding-left: 90px;
 
   @include vp-1199 {
     max-width: 768px;
     flex-direction: column;
     padding-left: 45px;
-    gap: 50px;
+    gap: 38px;
   }
 
   @include vp-767 {
@@ -38,16 +37,20 @@
 .gym__inner {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+  padding-left: 77px;
 
   @include vp-1199 {
     align-items: center;
     max-width: 505px;
+    padding-top: 0;
+    padding-left: 0;
   }
 
   @include vp-767 {
     align-items: flex-start;
     padding: 0 15px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 }
 
@@ -58,6 +61,7 @@
   letter-spacing: 0.03em;
   color: $color-sapphire;
   margin: 0;
+  padding-bottom: 9px;
 
   @include vp-1199 {
     font-size: 42px;
@@ -68,6 +72,7 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
+    padding-bottom: 5px;
   }
 }
 
@@ -76,10 +81,14 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-sapphire;
-  padding-bottom: 55px;
+  padding-bottom: 39px;
 
   @include vp-1199 {
-    padding-bottom: 50px;
+    padding-bottom: 32px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 24px;
   }
 }
 
@@ -91,7 +100,7 @@
   color: $color-sapphire;
 
   &:not(:last-child) {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 
   @include vp-1199 {
@@ -105,6 +114,7 @@
   @include vp-767 {
     text-align: start;
     padding-bottom: 10px;
+    padding-right: 30px;
   }
 }
 
@@ -136,13 +146,14 @@
 
 .gym__video-wrapper {
   position: absolute;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -115px;
+  right: 371px;
 
   @include vp-1199 {
-    bottom: 100px;
+    bottom: -83px;
+    right: auto;
     left: 50%;
+    transform: translateX(-50%);
   }
 
   @include vp-767 {
@@ -150,4 +161,3 @@
     transform: translateX(0);
   }
 }
-
