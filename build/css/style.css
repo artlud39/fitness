@@ -1187,7 +1187,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 15px;
   padding-left: 77px;
 }
 
@@ -1306,9 +1306,12 @@ button,
 }
 
 .gym-membership {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #f8f9fc;
+  z-index: 10;
+  overflow-x: clip;
 }
 
 .gym-membership__wrapper {
@@ -1324,7 +1327,20 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+.gym-membership__wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -213px;
+  right: -189px;
+  width: 321px;
+  height: 384px;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+  background-image: url("../img/gym-membership/pancakes-desktop.png");
 }
 
 .gym-membership__wrapper h2 {
@@ -1348,7 +1364,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 40px;
+  gap: 38px;
   position: relative;
 }
 
@@ -1360,10 +1376,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 46px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  gap: 46px;
 }
 
 .gym-membership__tabs-nav-list::before {
@@ -1434,9 +1450,9 @@ button,
   position: relative;
   width: 360px;
   min-height: 448px;
-  padding-top: 68px;
+  padding-top: 55px;
   padding-right: 77px;
-  padding-bottom: 68px;
+  padding-bottom: 61px;
   padding-left: 77px;
   background-color: #ffffff;
   display: -webkit-box;
@@ -1448,31 +1464,9 @@ button,
   border: 7px solid transparent;
 }
 
-.gym-membership__tabs-panel-item::before {
-  content: "5000";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 203px;
-  height: 69px;
-  font-weight: 700;
-  font-size: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: rgba(232, 232, 232, 0.48);
-  z-index: 3;
-}
-
 .gym-membership__tabs-panel-item:hover {
-  -o-border-image: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
-  border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  -o-border-image: -o-linear-gradient(319deg, #d10a42 5.6%, #00359f 95.31%);
+  border-image: linear-gradient(131deg, #d10a42 5.6%, #00359f 95.31%);
   border-image-slice: 1;
 }
 
@@ -1494,7 +1488,7 @@ button,
 }
 
 .gym-membership__tabs-panel-item-wrapper-title {
-  padding-bottom: 80px;
+  padding-bottom: 65px;
 }
 
 .gym-membership__tabs-panel-item-wrapper-title h3 {
@@ -1503,7 +1497,7 @@ button,
   line-height: 29px;
   color: #102654;
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .gym-membership__tabs-panel-item p {
@@ -1519,18 +1513,41 @@ button,
 }
 
 .gym-membership__tabs-panel-item-wrapper-price {
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 
 .gym-membership__tabs-panel-item-wrapper-price p {
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
+  color: #102654;
+}
+
+.gym-membership__tabs-panel-item-price {
   color: #103aae;
 }
 
-.gym-membership__tabs-panel-item-wrapper-price span {
-  color: #102654;
+.gym-membership__tabs-panel-item-price-bg {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 69px;
+  font-weight: 700;
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: rgba(232, 232, 232, 0.48);
+  z-index: -1;
 }
 
 .gym-membership__tabs-panel-item-wrapper a {
