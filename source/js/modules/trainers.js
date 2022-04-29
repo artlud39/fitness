@@ -6,9 +6,9 @@ const trainarsSwiperButtonNext = trainersSwiper.querySelector('.swiper-button-ne
 
 
 export const swiper = new Swiper(trainersSwiper, {
-  // slidesPerView: 4,
-  centeredSlides: true,
-  centeredSlidesBounds: true,
+  slidesPerView: 4,
+  // centeredSlides: true,
+  // centeredSlidesBounds: true,
   // centerInsufficientSlides: true,
   navigation: {
     nextEl: trainarsSwiperButtonNext,
