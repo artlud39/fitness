@@ -19,11 +19,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 51px;
 
   @include vp-1199 {
     max-width: 768px;
-    gap: 50px;
+    gap: 40px;
   }
 
   @include vp-767 {
@@ -47,7 +47,7 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
-    padding-bottom: 50px;
+    padding-bottom: 41px;
   }
 
 }
@@ -63,19 +63,19 @@
 .feedback__swiper-slide {
   background-color: $color-resolution-blue;
   box-shadow: 0 0 40px rgba(19, 21, 26, 0.2);
-  padding: 62px;
+  padding: 55px 61px 57px;
   min-height: 242px;
   width: 560px;
 
   @include vp-1199 {
     width: 566px;
-    padding: 62px 65px;
+    padding: 55px 65px 57px;;
   }
 
   @include vp-767 {
     width: 100%;
     min-width: 226px;
-    padding: 40px 25px;
+    padding: 40px 25px 36px;
   }
 }
 
@@ -83,7 +83,7 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: min-content min-content;
-  gap: 5px 28px;
+  gap: 11px 28px;
 
   @include vp-767 {
    gap: 0;
@@ -94,14 +94,16 @@
 .feedback__info-avatar-wrapper {
   width: 80px;
   height: 80px;
-  background-color: $color-default-white;
   border-radius: 50%;
   grid-row: 1 / -1;
+  padding-top: 5px;
 
   @include vp-767 {
     width: 68px;
     height: 68px;
     grid-row: 1 / 2;
+    padding: 0;
+    padding-left: 10px;
   }
 }
 
@@ -122,6 +124,7 @@
 
   @include vp-767 {
     align-self: center;
+    padding-left: 20px;
   }
 }
 
@@ -140,7 +143,7 @@
   @include vp-767 {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
   }
 }
