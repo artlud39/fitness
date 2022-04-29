@@ -38,6 +38,23 @@
 
   @include vp-1199 {
     max-width: 768px;
+    gap: 15px;
+
+    &::before {
+      bottom: -175px;
+      right: -10px;
+      width: 289px;
+      height: 345px;
+      background-image: url("../img/gym-membership/pancakes-tablet.png");
+    }
+  }
+
+  @include vp-767 {
+    gap: 7px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -67,6 +84,10 @@
   align-items: center;
   gap: 38px;
   position: relative;
+
+  @include vp-1199 {
+    gap: 44px;
+  }
 
   @include vp-767 {
     gap: 0;
@@ -123,10 +144,12 @@
 
   @include vp-1199 {
     font-size: 18px;
+    min-height: 54px;
   }
 
   @include vp-767 {
     font-size: 16px;
+    min-height: 52px;
   }
 }
 
@@ -183,9 +206,9 @@
   }
 
   @include vp-767 {
-    padding-top: 55px;
+    padding-top: 40px;
     padding-right: 42px;
-    padding-bottom: 55px;
+    padding-bottom: 49px;
     padding-left: 42px;
     width: 100%;
     min-height: 384px;
@@ -202,10 +225,18 @@
   align-items: center;
   justify-content: space-between;
   z-index: 4;
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .gym-membership__tabs-panel-item-wrapper-title {
   padding-bottom: 65px;
+
+  @include vp-767 {
+    padding-bottom: 45px;
+  }
 }
 
 .gym-membership__tabs-panel-item-wrapper-title h3 {
@@ -215,6 +246,11 @@
   color: $color-sapphire;
   margin: 0;
   padding-bottom: 10px;
+
+  @include vp-767 {
+    font-size: 22px;
+    padding-bottom: 7px;
+  }
 }
 
 .gym-membership__tabs-panel-item p {
@@ -231,6 +267,10 @@
 
 .gym-membership__tabs-panel-item-wrapper-price {
   padding-bottom: 35px;
+
+  @include vp-767 {
+    padding-bottom: 22px;
+  }
 }
 
 .gym-membership__tabs-panel-item-wrapper-price p {
@@ -238,6 +278,10 @@
   font-size: 60px;
   line-height: 90px;
   color: $color-sapphire;
+
+  @include vp-767 {
+    font-size: 48px;
+  }
 }
 
 .gym-membership__tabs-panel-item-price {
@@ -257,6 +301,10 @@
   transform: translate(-50%, -50%);
   color: rgba($color-whisper, 0.48);
   z-index: -1;
+
+  @include vp-767 {
+    font-size: 80px;
+  }
 }
 
 .gym-membership__tabs-panel-item-wrapper a {

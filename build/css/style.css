@@ -3056,11 +3056,24 @@ button,
 
   .gym-membership__wrapper {
     max-width: 768px;
+    gap: 15px;
+  }
+
+  .gym-membership__wrapper::before {
+    bottom: -175px;
+    right: -10px;
+    width: 289px;
+    height: 345px;
+    background-image: url("../img/gym-membership/pancakes-tablet.png");
   }
 
   .gym-membership__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
+  }
+
+  .gym-membership__tabs {
+    gap: 44px;
   }
 
   .gym-membership__tabs-nav-list {
@@ -3069,6 +3082,7 @@ button,
 
   .gym-membership__tabs-nav-button {
     font-size: 18px;
+    min-height: 54px;
   }
 
   .gym-membership__tabs-panel-list {
@@ -3511,6 +3525,14 @@ button,
     padding-bottom: 70px;
   }
 
+  .gym-membership__wrapper {
+    gap: 7px;
+  }
+
+  .gym-membership__wrapper::before {
+    display: none;
+  }
+
   .gym-membership__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
@@ -3532,6 +3554,7 @@ button,
 
   .gym-membership__tabs-nav-button {
     font-size: 16px;
+    min-height: 52px;
   }
 
   .gym-membership__tabs-panel-list {
@@ -3539,9 +3562,9 @@ button,
   }
 
   .gym-membership__tabs-panel-item {
-    padding-top: 55px;
+    padding-top: 40px;
     padding-right: 42px;
-    padding-bottom: 55px;
+    padding-bottom: 49px;
     padding-left: 42px;
     width: 100%;
     min-height: 384px;
@@ -3549,6 +3572,31 @@ button,
 
   .gym-membership__tabs-panel-item:not(:last-child) {
     margin-bottom: 35px;
+  }
+
+  .gym-membership__tabs-panel-item-wrapper {
+    text-align: center;
+  }
+
+  .gym-membership__tabs-panel-item-wrapper-title {
+    padding-bottom: 45px;
+  }
+
+  .gym-membership__tabs-panel-item-wrapper-title h3 {
+    font-size: 22px;
+    padding-bottom: 7px;
+  }
+
+  .gym-membership__tabs-panel-item-wrapper-price {
+    padding-bottom: 22px;
+  }
+
+  .gym-membership__tabs-panel-item-wrapper-price p {
+    font-size: 48px;
+  }
+
+  .gym-membership__tabs-panel-item-price-bg {
+    font-size: 80px;
   }
 
   .promo {
