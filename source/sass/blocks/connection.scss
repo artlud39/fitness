@@ -1,5 +1,11 @@
 .connection {
   border-top: 1px solid $color-light-slate-grey;
+  padding-left: 17px;
+  background-color: $color-sapphire;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .connection__wrapper {

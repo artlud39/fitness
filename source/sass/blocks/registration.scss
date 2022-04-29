@@ -2,27 +2,33 @@
   width: 50%;
   background-color: $color-sapphire;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 70px 0;
+  justify-content: flex-end;
 
   @include vp-1199 {
     width: 100%;
+    justify-content: center;
   }
 
   @include vp-767 {
     display: block;
-    padding: 70px 15px;
   }
 }
 
 .registration__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 27px;
+  max-width: 683px;
+  padding: 60px 171px 64px 35px;
+
+  @include vp-1199 {
+    gap: 29px;
+    padding: 69px 45px 69px 15px;
+  }
 
   @include vp-767 {
     gap: 0;
+    padding: 68px 15px 70px 15px;
   }
 }
 
@@ -45,8 +51,4 @@
     line-height: 32px;
     padding-bottom: 30px;
   }
-}
-
-.registration__form {
-
 }

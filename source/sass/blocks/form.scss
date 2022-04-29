@@ -1,7 +1,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 
   @include vp-767 {
     gap: 0;
@@ -17,7 +16,7 @@
 
   @include vp-767 {
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 }
 
@@ -29,7 +28,7 @@
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
   padding: 0;
-  padding: 10px 0;
+  padding: 8px 0;
   min-height: 30px;
   width: 190px;
   font-weight: 400;

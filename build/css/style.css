@@ -2449,6 +2449,8 @@ button,
 
 .connection {
   border-top: 1px solid #74819c;
+  padding-left: 17px;
+  background-color: #102654;
 }
 
 .connection__wrapper {
@@ -2463,13 +2465,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  padding: 70px 0;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .registration__wrapper {
@@ -2480,7 +2478,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 30px;
+  gap: 27px;
+  max-width: 683px;
+  padding: 60px 171px 64px 35px;
 }
 
 .registration__wrapper h2 {
@@ -2501,7 +2501,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 30px;
 }
 
 .form__personal-info-wrapper {
@@ -2524,7 +2523,7 @@ button,
   border: none;
   border-bottom: 1px solid #74819c;
   padding: 0;
-  padding: 10px 0;
+  padding: 8px 0;
   min-height: 30px;
   width: 190px;
   font-weight: 400;
@@ -2594,13 +2593,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  padding: 70px 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: #ffffff;
 }
 
 .contacts__wrapper {
@@ -2611,7 +2607,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 30px;
+  gap: 33px;
+  max-width: 683px;
+  padding: 60px 20px 64px 120px;
 }
 
 .contacts__wrapper h2 {
@@ -2633,7 +2631,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 30px 0;
+  gap: 18px 0;
 }
 
 .contacts__list::before {
@@ -2662,6 +2660,7 @@ button,
 
 .contacts__item:nth-child(2n + 1) {
   padding-right: 60px;
+  padding-left: 5px;
 }
 
 .contacts__item h3 {
@@ -2670,7 +2669,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #102654;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
 }
 
 .contacts__item p {
@@ -3368,6 +3367,10 @@ button,
     padding: 55px 65px 57px;
   }
 
+  .connection {
+    padding: 0;
+  }
+
   .connection__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3377,6 +3380,14 @@ button,
 
   .registration {
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .registration__wrapper {
+    gap: 29px;
+    padding: 69px 45px 69px 15px;
   }
 
   .registration__wrapper h2 {
@@ -3394,6 +3405,13 @@ button,
 
   .contacts {
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .contacts__wrapper {
+    padding: 69px 45px 61px 0;
   }
 
   .contacts__wrapper h2 {
@@ -3404,6 +3422,7 @@ button,
   .contacts__list {
     -ms-grid-columns: 266px 190px;
     grid-template-columns: 266px 190px;
+    gap: 20px 0;
   }
 
   .contacts__list::before {
@@ -3416,11 +3435,13 @@ button,
 
   .contacts__item:nth-child(2n + 1) {
     padding-right: 48px;
+    padding-left: 0;
   }
 
   .contacts__item h3 {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 5px;
   }
 
   .contacts__item p {
@@ -3919,11 +3940,11 @@ button,
 
   .registration {
     display: block;
-    padding: 70px 15px;
   }
 
   .registration__wrapper {
     gap: 0;
+    padding: 68px 15px 70px 15px;
   }
 
   .registration__wrapper h2 {
@@ -3941,7 +3962,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 
   .form input {
@@ -3956,17 +3977,17 @@ button,
 
   .contacts {
     display: block;
-    padding: 70px 15px;
   }
 
   .contacts__wrapper {
     gap: 0;
+    padding: 70px 15px 63px 15px;
   }
 
   .contacts__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
   }
 
   .contacts__list {
@@ -3988,7 +4009,31 @@ button,
   }
 
   .contacts__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__item--address {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .contacts__item--schedule {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .contacts__item--tel {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .contacts__item--email {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
   }
 
   .page-footer {
