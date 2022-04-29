@@ -8,6 +8,10 @@
   align-items: center;
   gap: 25px;
   color: $color-default-white;
+
+  @include vp-1199 {
+    gap: 20px;
+  }
 }
 
 .social__item a {

@@ -19,6 +19,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 27px;
+
+  @include vp-1199 {
+    max-width: 768px;
+  }
 
   @include vp-767 {
     display: grid;

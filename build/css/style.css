@@ -2705,6 +2705,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-left: 27px;
 }
 
 .main-nav__list {
@@ -2717,6 +2718,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 40px;
+  padding-left: 20px;
 }
 
 .main-nav__list a {
@@ -2927,10 +2929,6 @@ button,
 }
 
 @media (max-width: 1439px) {
-  .container {
-    padding: 0 10px;
-  }
-
   .page-header__wrapper {
     padding-left: 26px;
   }
@@ -3453,8 +3451,16 @@ button,
     min-height: 114px;
   }
 
+  .page-footer__wrapper {
+    max-width: 768px;
+  }
+
   .main-nav__list {
     gap: 30px;
+  }
+
+  .social__list {
+    gap: 20px;
   }
 }
 
