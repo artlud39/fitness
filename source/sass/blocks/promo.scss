@@ -26,7 +26,7 @@
 
 .promo__wrapper-info {
   background-color: $color-torch-red;
-  padding: 87px 79px 87px 78px;
+  padding: 77px 79px 87px 78px;
   width: 500px;
   min-height: 500px;
   display: flex;
@@ -37,7 +37,7 @@
   @include vp-1199 {
     width: 292px;
     min-height: 292px;
-    padding: 51px 45px 51px 45px;
+    padding: 47px 45px 51px 45px;
   }
 
   @include vp-767 {

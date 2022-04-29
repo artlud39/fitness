@@ -1626,7 +1626,7 @@ button,
 
 .promo__wrapper-info {
   background-color: #ed0233;
-  padding: 87px 79px 87px 78px;
+  padding: 77px 79px 87px 78px;
   width: 500px;
   min-height: 500px;
   display: -webkit-box;
@@ -3108,7 +3108,7 @@ button,
   .promo__wrapper-info {
     width: 292px;
     min-height: 292px;
-    padding: 51px 45px 51px 45px;
+    padding: 47px 45px 51px 45px;
   }
 
   .promo__info {
