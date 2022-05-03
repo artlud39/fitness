@@ -80,8 +80,9 @@
 }
 
 .intro__button {
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: $color-transparent;
   font-weight: 700;
   font-size: 12px;

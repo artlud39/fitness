@@ -1,7 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {scrollSmooth} from './modules/scroll-smooth';
 import {findVideos} from './modules/video';
 import {setupTabs} from './modules/gym-membership';
+import {setMaskTel} from './modules/form';
 import './modules/trainers';
 import './modules/feedback';
 
@@ -23,7 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     setupTabs();
     findVideos();
-
+    scrollSmooth();
+    setMaskTel();
   });
 });
 

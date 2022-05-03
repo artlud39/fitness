@@ -1051,8 +1051,15 @@ button,
 }
 
 .intro__button {
-  display: inline-block;
-  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0);
   font-weight: 700;
   font-size: 12px;
@@ -1076,9 +1083,7 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  -ms-grid-column-align: end;
   justify-self: end;
-  -ms-grid-row-align: end;
   align-self: end;
   margin-bottom: 45px;
 }
@@ -2524,6 +2529,7 @@ button,
   border-bottom: 1px solid #74819c;
   padding: 0;
   padding: 8px 0;
+  padding-left: 5px;
   min-height: 30px;
   width: 190px;
   font-weight: 400;
