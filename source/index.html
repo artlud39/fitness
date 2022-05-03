@@ -619,9 +619,25 @@
       <section class="feedback">
         <div class="feedback__wrapper container">
           <h2>Отзывы</h2>
-          <div class="feedback__swiper">
-            <div class="feedback__swiper-wrapper">
-              <div class="feedback__swiper-slide">
+          <div class="feedback__swiper swiper">
+            <div class="feedback__swiper-wrapper swiper-wrapper">
+              <div class="feedback__swiper-slide swiper-slide">
+                <div class="feedback__info">
+                  <div class="feedback__info-avatar-wrapper">
+                    <!-- 1х: width = 80px height = 80px; 2x: width = 160px height = 160px -->
+                    <img src="img/feedback/feedback-photo-user-1-desktop.jpg" width="80" height="80"
+                      alt="Аватар пользователя">
+                  </div>
+                  <div class="feedback__info-name-wrapper">
+                    <p>Анна Орлова</p>
+                  </div>
+                  <div class="feedback__info-text-wrapper">
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
+                      персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback__swiper-slide swiper-slide">
                 <div class="feedback__info">
                   <div class="feedback__info-avatar-wrapper">
                     <!-- 1х: width = 80px height = 80px; 2x: width = 160px height = 160px -->
@@ -694,19 +710,21 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <div class="page-footer__logo logo">
-          <img src="img/svg/supergym-logo.svg" width="89" height="20" alt="Логотип supergym">
-        </div>
-        <div class="page-footer__main-nav-wrapper main-nav">
-          <nav class="main-nav__nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">Услуги</a></li>
-              <li class="main-nav__item"><a href="#">Абонементы</a></li>
-              <li class="main-nav__item"><a href="#">Акции</a></li>
-              <li class="main-nav__item"><a href="#">Тренеры</a></li>
-              <li class="main-nav__item"><a href="#">Расписание</a></li>
-            </ul>
-          </nav>
+        <div class="page-footer__navigation-wrapper">
+          <div class="page-footer__logo logo">
+            <img src="img/svg/supergym-logo.svg" width="89" height="20" alt="Логотип supergym">
+          </div>
+          <div class="page-footer__main-nav-wrapper main-nav">
+            <nav class="main-nav__nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#">Услуги</a></li>
+                <li class="main-nav__item"><a href="#">Абонементы</a></li>
+                <li class="main-nav__item"><a href="#">Акции</a></li>
+                <li class="main-nav__item"><a href="#">Тренеры</a></li>
+                <li class="main-nav__item"><a href="#">Расписание</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
         <div class="page-footer__social-wrapper social">
           <ul class="social__list">

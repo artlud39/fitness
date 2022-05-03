@@ -10,7 +10,9 @@
   }
 
   @include vp-767 {
+    display: block;
     min-height: 260px;
+    padding: 45px 0;
   }
 }
 
@@ -27,19 +29,36 @@
 
   @include vp-767 {
     display: grid;
-    // justify-content: normal;
-    // align-content: normal;
+    justify-content: normal;
+    align-content: normal;
   }
 }
 
-// .page-footer__logo {
+.page-footer__navigation-wrapper {
+  display: flex;
+  align-items: center;
 
-// }
+  @include vp-767 {
+    column-count: 2;
+    margin-bottom: 5px;
+  }
+}
 
-// .page-footer__main-nav-wrapper {
+.page-footer__logo {
+  @include vp-767 {
+    padding-top: 5px;
+    margin-bottom: 20px;
+  }
+}
 
-// }
+.page-footer__main-nav-wrapper {
+  margin-left: 259px;
 
-// .page-footer__social-wrapper  {
+  @include vp-1199 {
+    margin-left: 43px;
+  }
+}
 
-// }
+.page-footer__social-wrapper  {
+  justify-self: start;
+}

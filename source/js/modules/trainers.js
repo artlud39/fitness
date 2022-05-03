@@ -31,4 +31,3 @@ export const swiper = new Swiper(trainersSwiper, {
   },
 });
 
-// const swiper = document.querySelector('.swiper').swiper;

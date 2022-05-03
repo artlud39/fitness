@@ -5,7 +5,7 @@ import {findVideos} from './modules/video';
 import {setupTabs} from './modules/gym-membership';
 import {setMaskTel} from './modules/form';
 import './modules/trainers';
-import './modules/feedback';
+// import './modules/feedback';
 
 // ---------------------------------
 

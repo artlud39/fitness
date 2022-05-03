@@ -12,6 +12,18 @@
   @include vp-1199 {
     gap: 20px;
   }
+
+  @include vp-767 {
+    gap: 0;
+  }
+}
+
+.social__item {
+  @include vp-767 {
+    &:not(:last-child) {
+      padding-right: 35px;
+    }
+  }
 }
 
 .social__item a {

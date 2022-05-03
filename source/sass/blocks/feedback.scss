@@ -60,9 +60,16 @@
   }
 }
 
-.feedback__swiper-slide {
+.feedback__swiper-wrapper  {
   background-color: $color-resolution-blue;
   box-shadow: 0 0 40px rgba(19, 21, 26, 0.2);
+}
+
+.feedback__info {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: min-content min-content;
+  gap: 11px 28px;
   padding: 55px 61px 57px;
   min-height: 242px;
   width: 560px;
@@ -73,21 +80,11 @@
   }
 
   @include vp-767 {
-    width: 100%;
-    min-width: 226px;
-    padding: 40px 25px 36px;
-  }
-}
-
-.feedback__info {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  grid-template-rows: min-content min-content;
-  gap: 11px 28px;
-
-  @include vp-767 {
    gap: 0;
    justify-items: center;
+   width: 100%;
+   min-width: 226px;
+   padding: 40px 25px 36px;
   }
 }
 
