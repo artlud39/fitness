@@ -1333,6 +1333,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 20px;
+  padding-left: 27px;
 }
 
 .gym-membership__wrapper::before {
@@ -1626,6 +1627,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  padding-left: 27px;
 }
 
 .promo__wrapper-info {
@@ -1819,7 +1821,7 @@ button,
 }
 
 .trainers__wrapper {
-  max-width: 1200px;
+  max-width: 1272px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1840,11 +1842,15 @@ button,
   letter-spacing: 0.03em;
   color: #102654;
   margin-bottom: 49px;
+  padding-left: 56px;
 }
 
-.trainers__swiper-wrapper {
-  max-width: 768px;
-  width: 100%;
+.trainers__swiper {
+  padding: 0 36px;
+}
+
+.trainers__swiper-slide {
+  width: 260px;
 }
 
 .trainers__item {
@@ -1971,8 +1977,16 @@ button,
   background-color: #ffffff;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.trainers__swiper .swiper-button-prev {
+  left: -6px;
+}
+
+.trainers__swiper.swiper-button-next {
+  right: -6px;
+}
+
+.trainers__swiper .swiper-button-next::after,
+.trainers__swiper .swiper-button-prev::after {
   color: #afafaf;
   width: 16px;
   height: 32px;
@@ -2001,6 +2015,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 68px;
+  padding-left: 27px;
 }
 
 .advantages__wrapper h2 {
@@ -2194,6 +2209,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 50px;
+  padding-left: 27px;
 }
 
 .action__wrapper h2 {
@@ -2374,6 +2390,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 51px;
+  padding-left: 27px;
 }
 
 .feedback__wrapper h2 {
@@ -2451,16 +2468,16 @@ button,
   color: #ffffff;
 }
 
-.swiper-button-prev {
+.feedback__swiper .swiper-button-prev {
   left: -6px;
 }
 
-.swiper-button-next {
+.feedback__swiper .swiper-button-next {
   right: -6px;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.feedback__swiper .swiper-button-next::after,
+.feedback__swiper.swiper-button-prev::after {
   font-size: 30px;
 }
 
@@ -3229,12 +3246,41 @@ button,
 
   .trainers__wrapper h2 {
     font-size: 42px;
+    margin-bottom: 39px;
     line-height: 42px;
     text-align: center;
+    padding-left: 0;
+  }
+
+  .trainers__swiper {
+    padding: 0 30px;
+  }
+
+  .trainers__swiper-slide {
+    width: 268px;
+  }
+
+  .trainers__item {
+    width: 268px;
+  }
+
+  .trainers__swiper .swiper-button-prev {
+    left: -5px;
+  }
+
+  .trainers__swiper.swiper-button-next {
+    right: -5px;
+  }
+
+  .trainers__swiper .swiper-button-next::after,
+  .trainers__swiper .swiper-button-prev::after {
+    font-size: 30px;
+    height: 32px;
+    width: 16px;
   }
 
   .advantages {
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -3401,16 +3447,16 @@ button,
     padding: 55px 65px 57px;
   }
 
-  .swiper-button-prev {
+  .feedback__swiper .swiper-button-prev {
     left: -5px;
   }
 
-  .swiper-button-next {
+  .feedback__swiper .swiper-button-next {
     right: -5px;
   }
 
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
+  .feedback__swiper .swiper-button-next::after,
+  .feedback__swiper.swiper-button-prev::after {
     font-size: 30px;
     height: 32px;
     width: 16px;
@@ -3769,6 +3815,29 @@ button,
     line-height: 32px;
   }
 
+  .trainers__swiper-slide {
+    width: 226px;
+  }
+
+  .trainers__item {
+    width: 226px;
+  }
+
+  .trainers__swiper .swiper-button-prev {
+    left: -8px;
+  }
+
+  .trainers__swiper.swiper-button-next {
+    right: -8px;
+  }
+
+  .trainers__swiper .swiper-button-next::after,
+  .trainers__swiper .swiper-button-prev::after {
+    font-size: 20px;
+    height: 19px;
+    width: 10px;
+  }
+
   .advantages {
     padding-top: 40px;
     padding-bottom: 70px;
@@ -3998,16 +4067,16 @@ button,
     text-align: center;
   }
 
-  .swiper-button-prev {
+  .feedback__swiper .swiper-button-prev {
     left: -8px;
   }
 
-  .swiper-button-next {
+  .feedback__swiper .swiper-button-next {
     right: -8px;
   }
 
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
+  .feedback__swiper .swiper-button-next::after,
+  .feedback__swiper.swiper-button-prev::after {
     font-size: 20px;
     height: 19px;
     width: 10px;
@@ -4128,6 +4197,7 @@ button,
   }
 
   .page-footer__navigation-wrapper {
+    display: block;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -4137,6 +4207,10 @@ button,
   .page-footer__logo {
     padding-top: 5px;
     margin-bottom: 20px;
+  }
+
+  .page-footer__main-nav-wrapper {
+    margin-left: 0;
   }
 
   .main-nav__list {

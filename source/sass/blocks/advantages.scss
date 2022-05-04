@@ -4,7 +4,7 @@
   padding-bottom: 120px;
 
   @include vp-1199 {
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -21,6 +21,7 @@
   justify-content: center;
   align-items: center;
   gap: 68px;
+  padding-left: 27px;
 
   @include vp-1199 {
     max-width: 768px;

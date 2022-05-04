@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   gap: 51px;
+  padding-left: 27px;
 
   @include vp-1199 {
     max-width: 768px;
@@ -63,13 +64,8 @@
   }
 }
 
-.feedback__swiper-wrapper  {
-
-}
-
 .feedback__swiper-slide {
   background-color: $color-resolution-blue;
-
 }
 
 .feedback__info {
@@ -160,7 +156,7 @@
   color: $color-default-white;
 }
 
-.swiper-button-prev {
+.feedback__swiper .swiper-button-prev {
   left: -6px;
 
   @include vp-1199 {
@@ -172,7 +168,7 @@
   }
 }
 
-.swiper-button-next  {
+.feedback__swiper .swiper-button-next  {
   right: -6px;
 
   @include vp-1199 {
@@ -184,8 +180,8 @@
   }
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.feedback__swiper .swiper-button-next::after,
+.feedback__swiper.swiper-button-prev::after {
   font-size: 30px;
 
   @include vp-1199 {

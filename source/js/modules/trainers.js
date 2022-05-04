@@ -6,23 +6,21 @@ const trainarsSwiperButtonNext = trainersSwiper.querySelector('.swiper-button-ne
 
 
 export const swiper = new Swiper(trainersSwiper, {
-
-  // centeredSlides: true,
-  // centeredSlidesBounds: true,
-  // centerInsufficientSlides: true,
+  centeredSlidesBounds: true,
   navigation: {
     nextEl: trainarsSwiperButtonNext,
     prevEl: trainarsSwiperButtonPrev,
   },
-  // keyboad: {
-  //   enable: true,
-  // },
+
+  keyboad: {
+    enable: true,
+  },
 
   breakpoints: {
     320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
     768: {
       slidesPerView: 2,
