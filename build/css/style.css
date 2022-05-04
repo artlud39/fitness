@@ -2387,12 +2387,11 @@ button,
 
 .feedback__swiper {
   padding: 0 56px;
+  max-width: 672px;
 }
 
-.feedback__swiper-wrapper {
+.feedback__swiper-slide {
   background-color: #1c3374;
-  -webkit-box-shadow: 0 0 40px rgba(19, 21, 26, 0.2);
-  box-shadow: 0 0 40px rgba(19, 21, 26, 0.2);
 }
 
 .feedback__info {
@@ -2450,6 +2449,19 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.swiper-button-prev {
+  left: -6px;
+}
+
+.swiper-button-next {
+  right: -6px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px;
 }
 
 .connection {
@@ -3389,6 +3401,21 @@ button,
     padding: 55px 65px 57px;
   }
 
+  .swiper-button-prev {
+    left: -5px;
+  }
+
+  .swiper-button-next {
+    right: -5px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 30px;
+    height: 32px;
+    width: 16px;
+  }
+
   .connection {
     padding: 0;
   }
@@ -3929,6 +3956,8 @@ button,
   }
 
   .feedback__swiper {
+    width: 100%;
+    min-width: 290px;
     padding: 0 32px;
   }
 
@@ -3967,6 +3996,21 @@ button,
     grid-row: 2 / -1;
     padding-top: 15px;
     text-align: center;
+  }
+
+  .swiper-button-prev {
+    left: -8px;
+  }
+
+  .swiper-button-next {
+    right: -8px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px;
+    height: 19px;
+    width: 10px;
   }
 
   .registration {

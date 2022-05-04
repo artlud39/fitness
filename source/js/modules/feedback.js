@@ -6,16 +6,11 @@ const feedbackSwiperButtonNext = feedbackSwiper.querySelector('.feedback__swiper
 
 
 export const swiper = new Swiper(feedbackSwiper, {
-  // slidesPerView: 4,
-  centeredSlides: true,
-  centeredSlidesBounds: true,
-  // centerInsufficientSlides: true,
-  // loop: true,
   slidesPerView: 1,
+  spaceBetween: 56,
+  loop: true,
   navigation: {
     nextEl: feedbackSwiperButtonNext,
     prevEl: feedbackSwiperButtonPrev,
   },
 });
-
-
