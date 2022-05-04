@@ -34,4 +34,3 @@ export const swiper = new Swiper(trainersSwiper, {
     },
   },
 });
-

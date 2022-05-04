@@ -158,12 +158,6 @@
   width: 100%;
 }
 
-.gym-membership__tabs-panel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .gym-membership__tabs-panel-list {
   margin: 0;
   padding: 0;
@@ -342,7 +336,7 @@
 
 .gym-membership__tabs-nav-button--active {
   border-bottom: 2px solid #d10a42;
-  color: $color-sapphire
+  color: $color-sapphire;
 }
 
 .gym-membership__tabs-panel {

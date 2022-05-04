@@ -1007,8 +1007,8 @@ button,
 }
 
 .intro {
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   background-color: #ed0233;
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   min-height: 658px;
   margin-top: -50px;
   padding-top: 51px;
@@ -1424,19 +1424,6 @@ button,
   width: 100%;
 }
 
-.gym-membership__tabs-panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .gym-membership__tabs-panel-list {
   margin: 0;
   padding: 0;
@@ -1661,7 +1648,7 @@ button,
   -ms-grid-rows: min-content;
   grid-template-rows: -webkit-min-content;
   grid-template-rows: min-content;
-  gap: 0px 50px;
+  gap: 0 50px;
 }
 
 .promo__info-name {
@@ -2556,7 +2543,6 @@ button,
 .form input {
   border: none;
   border-bottom: 1px solid #74819c;
-  padding: 0;
   padding: 8px 0;
   padding-left: 5px;
   min-height: 30px;
@@ -3016,7 +3002,7 @@ button,
   }
 
   .intro {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 554px;
     margin-top: -57px;
     padding-top: 82px;
@@ -3183,7 +3169,7 @@ button,
   }
 
   .promo__info {
-    gap: 0px 29px;
+    gap: 0 29px;
   }
 
   .promo__info-date {
@@ -3585,7 +3571,7 @@ button,
   }
 
   .intro {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     min-height: 491px;
     margin-top: -35px;
     padding-top: 115px;
@@ -3869,7 +3855,6 @@ button,
     min-width: 320px;
     width: 100%;
     min-height: 153px;
-    padding-top: 20px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

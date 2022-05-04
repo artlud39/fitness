@@ -50,7 +50,6 @@
     line-height: 32px;
     padding-bottom: 41px;
   }
-
 }
 
 .feedback__swiper {
@@ -79,15 +78,15 @@
 
   @include vp-1199 {
     width: 566px;
-    padding: 55px 65px 57px;;
+    padding: 55px 65px 57px;
   }
 
   @include vp-767 {
-   gap: 0;
-   justify-items: center;
-   width: 100%;
-   min-width: 226px;
-   padding: 40px 25px 36px;
+    gap: 0;
+    justify-items: center;
+    width: 100%;
+    min-width: 226px;
+    padding: 40px 25px 36px;
   }
 }
 
@@ -121,7 +120,6 @@
 }
 
 .feedback__info-name-wrapper {
-
   @include vp-767 {
     align-self: center;
     padding-left: 20px;
@@ -168,7 +166,7 @@
   }
 }
 
-.feedback__swiper .swiper-button-next  {
+.feedback__swiper .swiper-button-next {
   right: -6px;
 
   @include vp-1199 {

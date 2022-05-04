@@ -48,10 +48,10 @@
   display: grid;
   grid-template-columns: min-content max-content;
   grid-template-rows: min-content;
-  gap: 0px 50px;
+  gap: 0 50px;
 
   @include vp-1199 {
-    gap: 0px 29px;
+    gap: 0 29px;
   }
 }
 
@@ -165,10 +165,10 @@
   line-height: 27px;
   color: $color-default-white;
 
-    @include vp-1199 {
-      padding-top: 0;
-      font-size: 12px;
-      line-height: 18px;
+  @include vp-1199 {
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -206,23 +206,6 @@
     min-height: 39px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .promo__photo-wrapper {
   min-width: fit-content;
