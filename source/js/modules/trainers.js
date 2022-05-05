@@ -1,4 +1,5 @@
-import '../vendor';
+import Swiper, {Navigation} from 'swiper';
+
 const trainars = document.querySelector('.trainers');
 const trainersSwiper = trainars.querySelector('.swiper');
 const trainarsSwiperButtonPrev = trainersSwiper.querySelector('.swiper-button-prev');
@@ -6,6 +7,7 @@ const trainarsSwiperButtonNext = trainersSwiper.querySelector('.swiper-button-ne
 
 
 export const swiper = new Swiper(trainersSwiper, {
+  modules: [Navigation],
   centeredSlidesBounds: true,
   navigation: {
     nextEl: trainarsSwiperButtonNext,

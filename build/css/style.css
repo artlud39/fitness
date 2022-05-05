@@ -419,8 +419,8 @@ template {
   pointer-events: none;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
@@ -436,8 +436,8 @@ template {
   right: auto;
 }
 
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
   content: 'prev';
 }
 
@@ -447,8 +447,8 @@ template {
   left: auto;
 }
 
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
   content: 'next';
 }
 

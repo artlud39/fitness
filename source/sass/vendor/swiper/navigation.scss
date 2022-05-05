@@ -1,5 +1,7 @@
 @import 'swiper-vars.scss';
+
 @at-root {
+
   :root {
     --swiper-navigation-size: 44px;
     /*
@@ -7,6 +9,7 @@
   */
   }
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
@@ -20,12 +23,14 @@
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
   &.swiper-button-disabled {
     opacity: 0.35;
     cursor: auto;
     pointer-events: none;
   }
-  &:after {
+
+  &::after {
     font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;
@@ -35,17 +40,21 @@
     line-height: 1;
   }
 }
+
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  &:after {
+
+  &::after {
     content: 'prev';
   }
   left: 10px;
   right: auto;
 }
+
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  &:after {
+
+  &::after {
     content: 'next';
   }
   right: 10px;
