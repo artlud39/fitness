@@ -179,8 +179,9 @@
 }
 
 .feedback__swiper .swiper-button-next::after,
-.feedback__swiper.swiper-button-prev::after {
+.feedback__swiper .swiper-button-prev::after {
   font-size: 30px;
+  color: #afafaf;
 
   @include vp-1199 {
     font-size: 30px;

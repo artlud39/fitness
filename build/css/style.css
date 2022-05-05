@@ -2464,8 +2464,9 @@ button,
 }
 
 .feedback__swiper .swiper-button-next::after,
-.feedback__swiper.swiper-button-prev::after {
+.feedback__swiper .swiper-button-prev::after {
   font-size: 30px;
+  color: #afafaf;
 }
 
 .connection {
@@ -3442,7 +3443,7 @@ button,
   }
 
   .feedback__swiper .swiper-button-next::after,
-  .feedback__swiper.swiper-button-prev::after {
+  .feedback__swiper .swiper-button-prev::after {
     font-size: 30px;
     height: 32px;
     width: 16px;
@@ -4061,7 +4062,7 @@ button,
   }
 
   .feedback__swiper .swiper-button-next::after,
-  .feedback__swiper.swiper-button-prev::after {
+  .feedback__swiper .swiper-button-prev::after {
     font-size: 20px;
     height: 19px;
     width: 10px;
