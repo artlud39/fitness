@@ -8,7 +8,6 @@ const feedbackSwiperButtonNext = feedbackSwiper.querySelector('.feedback__swiper
 export const swiper = new Swiper(feedbackSwiper, {
   modules: [Navigation],
   slidesPerView: 1,
-  spaceBetween: 56,
   loop: true,
   navigation: {
     nextEl: feedbackSwiperButtonNext,

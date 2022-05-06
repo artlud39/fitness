@@ -34,28 +34,36 @@
       <section class="intro">
         <h2 class="visually-hidden"> О нас</h2>
         <div class="intro__wrapper container">
-          <div class="intro__intro-logo">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/svg/intro-logo-mobile.svg">
-              <source media="(max-width: 1199px)" srcset="img/svg/intro-logo-tablet.svg">
-              <!-- 1х: width = 377px height = 253px; -->
-              <img src="img/svg/intro-logo.svg" width="377" height="253" alt="фитнес центр омск">
-            </picture>
+          <div class="intro__content-wrapper">
+            <div class="intro__content">
+              <div class="intro__text">
+                <p>Омск</p>
+                <div class="intro__group">
+                  <p>Фитнес центр</p>
+                  <ul class="intro__list">
+                    <li class="intro__list-item">Тренажёрный зал</li>
+                    <li class="intro__list-item">Групповые занятия</li>
+                    <li class="intro__list-item">Кардио-зона</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#gym-membership" class="intro__button">Купить абонемент</a>
+            </div>
+            <div class="intro__photo-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/main-screen/superman-tablet.webp 1x, img/main-screen/superman-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/main-screen/superman-desktop.webp 1x, img/main-screen/superman-desktop@2x.webp 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="img/main-screen/superman-desktop.jpg 1x, img/main-screen/superman-desktop@2x.jpg 2x">
+                <!-- 1х: width = 500px height = 556; 2x: width = 1000px height = 1112 -->
+                <img src="img/main-screen/superman-desktop.jpg" srcset="img/main-screen/superman-desktop@2x.jpg 2x"
+                  width="500" height="556" alt="мужчина в майке супермена">
+              </picture>
+            </div>
           </div>
-          <a href="#gym-membership" class="intro__button">Купить абонемент</a>
-          <div class="intro__photo-wrapper">
-            <picture>
-              <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/main-screen/superman-tablet.webp 1x, img/main-screen/superman-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/main-screen/superman-desktop.webp 1x, img/main-screen/superman-desktop@2x.webp 2x">
-              <source media="(max-width: 1199px)"
-                srcset="img/main-screen/superman-desktop.jpg 1x, img/main-screen/superman-desktop@2x.jpg 2x">
-              <!-- 1х: width = 500px height = 556; 2x: width = 1000px height = 1112 -->
-              <img src="img/main-screen/superman-desktop.jpg" srcset="img/main-screen/superman-desktop@2x.jpg 2x"
-                width="500" height="556" alt="мужчина в майке супермена">
-            </picture>
-          </div>
+
           <div class="intro__social-wrapper">
             <ul class="intro__social-list">
               <li class="intro__social-item"><a href="#">fb</a></li>
@@ -122,12 +130,12 @@
                   <defs>
                     <lineargradient id="paint0_linear_1_155" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
                       gradientUnits="userSpaceOnUse">
-                      <stop offset="" stop-color="#ED0233" />
+                      <stop offset="0" stop-color="#ED0233" />
                       <stop offset="1" stop-color="#003EB7" />
                     </lineargradient>
                     <lineargradient id="paint1_linear_1_155" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
                       gradientUnits="userSpaceOnUse">
-                      <stop offset="" stop-color="#003D85" />
+                      <stop offset="0" stop-color="#003D85" />
                       <stop offset="0.885417" stop-color="#B80027" />
                     </lineargradient>
                   </defs>
@@ -556,11 +564,11 @@
       <section class="action">
         <div class="action__wrapper container">
           <h2>Акции</h2>
-          <ul class="action__list">
-            <li class="action__item action__item--special">
-              <div class="action__item-wrapper">
-                <div class="action__item-info-wrapper">
-                  <div class="action__item-info">
+          <div class="action__content-wrapper">
+            <div class="action__content-special">
+              <div class="action__content-inner">
+                <div class="action__content-info-wrapper">
+                  <div class="action__content-info">
                     <h3>Год</h3>
                     <b>4999</b>
                     <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
@@ -587,34 +595,37 @@
                   </picture>
                 </div>
               </div>
-            </li>
-            <li class="action__item">
-              <div class="action__item-wrapper">
-                <div class="action__item-info-wrapper">
-                  <div class="action__item-info">
-                    <h3>Месяц бесплатно</h3>
-                    <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-                  </div>
-                  <div class="action__item-button-wrapper">
-                    <a href="sitemap.html">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="action__item">
-              <div class="action__item-wrapper">
-                <div class="action__item-info-wrapper">
-                  <div class="action__item-info">
-                    <h3>Скидка 20%</h3>
-                    <p>Корпоративный фитнес с&nbsp;командой</p>
-                  </div>
-                  <div class="action__item-button-wrapper">
-                    <a href="sitemap.html">Подробнее</a>
+            </div>
+            <ul class="action__list">
+              <li class="action__item">
+                <div class="action__item-wrapper">
+                  <div class="action__item-info-wrapper">
+                    <div class="action__item-info">
+                      <h3>Месяц бесплатно</h3>
+                      <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                    </div>
+                    <div class="action__item-button-wrapper">
+                      <a href="sitemap.html">Подробнее</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="action__item">
+                <div class="action__item-wrapper">
+                  <div class="action__item-info-wrapper">
+                    <div class="action__item-info">
+                      <h3>Скидка 20%</h3>
+                      <p>Корпоративный фитнес с&nbsp;командой</p>
+                    </div>
+                    <div class="action__item-button-wrapper">
+                      <a href="sitemap.html">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
@@ -647,7 +658,39 @@
                       alt="Аватар пользователя">
                   </div>
                   <div class="feedback__info-name-wrapper">
-                    <p>Анна Орлова</p>
+                    <p>Анна Орлова2</p>
+                  </div>
+                  <div class="feedback__info-text-wrapper">
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
+                      персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback__swiper-slide swiper-slide">
+                <div class="feedback__info">
+                  <div class="feedback__info-avatar-wrapper">
+                    <!-- 1х: width = 80px height = 80px; 2x: width = 160px height = 160px -->
+                    <img src="img/feedback/feedback-photo-user-1-desktop.jpg" width="80" height="80"
+                      alt="Аватар пользователя">
+                  </div>
+                  <div class="feedback__info-name-wrapper">
+                    <p>Анна Орлова3</p>
+                  </div>
+                  <div class="feedback__info-text-wrapper">
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
+                      персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback__swiper-slide swiper-slide">
+                <div class="feedback__info">
+                  <div class="feedback__info-avatar-wrapper">
+                    <!-- 1х: width = 80px height = 80px; 2x: width = 160px height = 160px -->
+                    <img src="img/feedback/feedback-photo-user-1-desktop.jpg" width="80" height="80"
+                      alt="Аватар пользователя">
+                  </div>
+                  <div class="feedback__info-name-wrapper">
+                    <p>Анна Орлова4</p>
                   </div>
                   <div class="feedback__info-text-wrapper">
                     <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
@@ -676,7 +719,7 @@
                   </div>
                   <div class="form__tel-wrapper">
                     <label>
-                      <input type="tel" name="tel" placeholder="Телефон" required data-phone-pattern>
+                      <input type="tel" name="tel" placeholder="Телефон" minlength="11" required data-phone-pattern>
                     </label>
                   </div>
                 </fieldset>

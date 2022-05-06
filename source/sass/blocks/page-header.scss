@@ -18,11 +18,6 @@
   align-items: flex-end;
   justify-content: space-between;
   max-width: 1200px;
-  padding-left: 26px;
-
-  @include vp-1439 {
-    padding-left: 26px;
-  }
 
   @include vp-1199 {
     max-width: 768px;
